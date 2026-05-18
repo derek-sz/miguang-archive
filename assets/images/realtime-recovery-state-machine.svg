@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">恢复状态机</title>
+  <desc id="desc">展示 Idle、Degraded、Recovering、Ready 四个恢复状态，以及 Recovery Pending、成功清除、失败退避和 dirty 续跑的转移关系。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#dc2626"/>
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 32px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .sub { font: 500 18px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #64748b; }
+      .state-title { font: 750 26px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #0f172a; }
+      .state-desc { font: 500 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #475569; }
+      .edge { font: 650 16px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; fill: #334155; }
+      .idle { fill: #f1f5f9; stroke: #94a3b8; stroke-width: 2.5; }
+      .degraded { fill: #fff7ed; stroke: #fb923c; stroke-width: 2.5; }
+      .recovering { fill: #eff6ff; stroke: #60a5fa; stroke-width: 2.5; }
+      .ready { fill: #ecfdf5; stroke: #22c55e; stroke-width: 2.5; }
+      .arrow { stroke: #334155; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .green { stroke: #16a34a; stroke-width: 3; fill: none; marker-end: url(#arrow-green); }
+      .red { stroke: #dc2626; stroke-width: 3; fill: none; marker-end: url(#arrow-red); }
+      .dash { stroke-dasharray: 9 8; }
+      .badge { fill: #ffffff; stroke: #d8e0ea; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="720"/>
+  <text x="600" y="62" text-anchor="middle" class="title">恢复状态机：Pending、执行、清除</text>
+  <text x="600" y="96" text-anchor="middle" class="sub">状态机的价值不是枚举，而是定义谁有权启动、等待、失败和清除</text>
+
+  <rect x="90" y="285" width="220" height="120" rx="22" class="idle"/>
+  <text x="200" y="330" text-anchor="middle" class="state-title">Idle</text>
+  <text x="200" y="360" text-anchor="middle" class="state-desc">暂时不能恢复</text>
+  <text x="200" y="385" text-anchor="middle" class="state-desc">无参数 / inactive / destroyed</text>
+
+  <rect x="385" y="285" width="220" height="120" rx="22" class="degraded"/>
+  <text x="495" y="330" text-anchor="middle" class="state-title">Degraded</text>
+  <text x="495" y="360" text-anchor="middle" class="state-desc">Recovery Pending</text>
+  <text x="495" y="385" text-anchor="middle" class="state-desc">needRecover = true</text>
+
+  <rect x="680" y="285" width="220" height="120" rx="22" class="recovering"/>
+  <text x="790" y="330" text-anchor="middle" class="state-title">Recovering</text>
+  <text x="790" y="360" text-anchor="middle" class="state-desc">正在执行恢复</text>
+  <text x="790" y="385" text-anchor="middle" class="state-desc">single-flight</text>
+
+  <rect x="890" y="500" width="220" height="120" rx="22" class="ready"/>
+  <text x="1000" y="545" text-anchor="middle" class="state-title">Ready</text>
+  <text x="1000" y="575" text-anchor="middle" class="state-desc">恢复闭环成功</text>
+  <text x="1000" y="600" text-anchor="middle" class="state-desc">clear pending</text>
+
+  <path d="M310 345 H379" class="arrow"/>
+  <text x="345" y="326" text-anchor="middle" class="edge">条件满足</text>
+
+  <path d="M605 345 H674" class="arrow"/>
+  <text x="640" y="326" text-anchor="middle" class="edge">开始恢复</text>
+
+  <path d="M875 405 C915 450 950 472 990 492" class="green"/>
+  <text x="945" y="452" text-anchor="middle" class="edge">成功：clear pending</text>
+
+  <path d="M680 390 C610 505 485 500 495 412" class="red"/>
+  <text x="575" y="500" text-anchor="middle" class="edge">失败：keep pending + backoff</text>
+
+  <path d="M840 285 C855 200 725 180 705 258" class="red dash"/>
+  <text x="774" y="207" text-anchor="middle" class="edge">恢复中又触发：dirty = true</text>
+  <text x="774" y="232" text-anchor="middle" class="edge">本轮结束后补跑</text>
+
+  <path d="M1000 500 C1070 370 1040 240 905 326" class="arrow dash"/>
+  <text x="1040" y="350" text-anchor="middle" class="edge">new pending</text>
+
+  <rect x="124" y="145" width="952" height="72" rx="18" class="badge"/>
+  <text x="600" y="174" text-anchor="middle" class="edge">关键语义：事件不直接证明成功，只把系统推进到“需要恢复”的事实</text>
+  <text x="600" y="199" text-anchor="middle" class="sub">成功必须由状态机根据快照、订阅和代际校验共同裁决</text>
+</svg>
