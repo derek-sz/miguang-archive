@@ -4,6 +4,7 @@
 
 ## 文章目录
 
+- [如何更好地记东西：从死记硬背到建立记忆网络](articles/how-to-remember-better.md)
 - [SUI 现货低风险收益策略：从质押、借贷到小仓位循环](articles/sui-low-risk-yield-strategy.md)
 - [YouTube 视频嵌入：URL 解析与 16:9 iframe 自适应比例实践](articles/youtube-embed-url-parsing-and-responsive-iframe.md)
 - [多个 AI 模型一起参与代码协作，为什么更容易把事情做坏](articles/cloud-ai-review-context-mismatch.md)

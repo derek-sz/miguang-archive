@@ -1,0 +1,63 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#F7F4EC"/>
+  <rect x="70" y="62" width="1140" height="596" rx="28" fill="#FFFDF8" stroke="#D8D0C3" stroke-width="2"/>
+  <text x="640" y="126" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="42" font-weight="700" fill="#202124">记忆不是存储，而是建立可提取的网络</text>
+  <text x="640" y="166" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="21" fill="#5F6368">让信息有意义、有连接、有画面、有结构，并且能被重新想起来</text>
+
+  <g stroke="#C8BDAE" stroke-width="3">
+    <line x1="300" y1="340" x2="490" y2="268"/>
+    <line x1="490" y1="268" x2="640" y2="360"/>
+    <line x1="640" y1="360" x2="790" y2="268"/>
+    <line x1="790" y1="268" x2="980" y2="340"/>
+    <line x1="300" y1="340" x2="640" y2="360"/>
+    <line x1="980" y1="340" x2="640" y2="360"/>
+    <line x1="490" y1="268" x2="790" y2="268"/>
+    <line x1="300" y1="340" x2="490" y2="462"/>
+    <line x1="490" y1="462" x2="640" y2="360"/>
+    <line x1="640" y1="360" x2="790" y2="462"/>
+    <line x1="790" y1="462" x2="980" y2="340"/>
+    <line x1="490" y1="462" x2="790" y2="462"/>
+  </g>
+
+  <circle cx="640" cy="360" r="82" fill="#263238"/>
+  <text x="640" y="349" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="30" font-weight="700" fill="#FFFFFF">记忆网络</text>
+  <text x="640" y="386" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="19" fill="#DDE3E6">可理解 · 可找到 · 可使用</text>
+
+  <g>
+    <circle cx="300" cy="340" r="74" fill="#2F6F73"/>
+    <text x="300" y="331" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">意义化</text>
+    <text x="300" y="366" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="18" fill="#EAF6F4">先理解，再记忆</text>
+  </g>
+
+  <g>
+    <circle cx="490" cy="268" r="74" fill="#D26F45"/>
+    <text x="490" y="259" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">连接化</text>
+    <text x="490" y="294" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="18" fill="#FFF0E8">新知识接旧知识</text>
+  </g>
+
+  <g>
+    <circle cx="790" cy="268" r="74" fill="#7C5C9C"/>
+    <text x="790" y="259" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">图像化</text>
+    <text x="790" y="294" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="18" fill="#F1E9FF">把抽象变画面</text>
+  </g>
+
+  <g>
+    <circle cx="980" cy="340" r="74" fill="#3E6FA8"/>
+    <text x="980" y="331" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">结构化</text>
+    <text x="980" y="366" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="18" fill="#EAF2FF">把散点放进系统</text>
+  </g>
+
+  <g>
+    <circle cx="640" cy="540" r="74" fill="#8A6F2A"/>
+    <text x="640" y="531" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="27" font-weight="700" fill="#FFFFFF">提取化</text>
+    <text x="640" y="566" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="18" fill="#FFF6D8">反复想起并使用</text>
+  </g>
+
+  <g stroke="#C8BDAE" stroke-width="3">
+    <line x1="640" y1="442" x2="640" y2="466"/>
+    <line x1="490" y1="462" x2="584" y2="506"/>
+    <line x1="790" y1="462" x2="696" y2="506"/>
+  </g>
+
+  <text x="640" y="632" text-anchor="middle" font-family="Arial, 'Noto Sans SC', sans-serif" font-size="20" fill="#5F6368">好的记忆：不是看起来熟，而是需要时能想起，并且用得出来</text>
+</svg>
