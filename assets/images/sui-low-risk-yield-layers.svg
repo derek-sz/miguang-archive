@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">SUI low risk yield layers</title>
+  <desc id="desc">A layered chart showing SUI yield options from native staking to lending and small looping allocation.</desc>
+  <rect width="1200" height="675" fill="#f7f9fc"/>
+  <rect x="72" y="64" width="1056" height="547" rx="28" fill="#ffffff" stroke="#d9e2ef"/>
+  <text x="112" y="128" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#132238">SUI 低风险收益分层</text>
+  <text x="112" y="168" font-family="Inter, Arial, sans-serif" font-size="20" fill="#526174">从原生质押到小仓位循环策略，收益越高，管理成本和风险越高</text>
+
+  <g transform="translate(112 232)">
+    <rect width="976" height="96" rx="18" fill="#e9f7ef" stroke="#b7e2c8"/>
+    <circle cx="48" cy="48" r="24" fill="#26a269"/>
+    <text x="48" y="56" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">1</text>
+    <text x="92" y="42" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#143d2a">基础层：原生质押 / sSUI</text>
+    <text x="92" y="72" font-family="Inter, Arial, sans-serif" font-size="18" fill="#466052">目标是保留 SUI 敞口，少操作，收益约 1.5% 左右</text>
+    <text x="820" y="57" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#143d2a">低风险</text>
+  </g>
+
+  <g transform="translate(112 358)">
+    <rect width="976" height="96" rx="18" fill="#eef5ff" stroke="#c5d9f4"/>
+    <circle cx="48" cy="48" r="24" fill="#2f80ed"/>
+    <text x="48" y="56" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">2</text>
+    <text x="92" y="42" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#173b68">增强层：借贷协议普通供给</text>
+    <text x="92" y="72" font-family="Inter, Arial, sans-serif" font-size="18" fill="#4d627d">目标是提高一点收益，不主动借款，收益约 2%-4%</text>
+    <text x="792" y="57" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#173b68">中低风险</text>
+  </g>
+
+  <g transform="translate(112 484)">
+    <rect width="976" height="96" rx="18" fill="#fff4e8" stroke="#f2d0a5"/>
+    <circle cx="48" cy="48" r="24" fill="#d9822b"/>
+    <text x="48" y="56" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">3</text>
+    <text x="92" y="42" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#6a3b0c">小仓位增强：sSUI/SUI Looping</text>
+    <text x="92" y="72" font-family="Inter, Arial, sans-serif" font-size="18" fill="#76512b">目标是用小比例承担杠杆风险，不追最高 APR</text>
+    <text x="792" y="57" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#6a3b0c">中高风险</text>
+  </g>
+</svg>
