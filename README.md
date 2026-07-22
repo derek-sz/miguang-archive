@@ -4,6 +4,7 @@
 
 ## 文章目录
 
+- [当 AI 成为我与世界之间的入口](articles/when-ai-becomes-the-interface.md)
 - [如何更好地记东西：从死记硬背到建立记忆网络](articles/how-to-remember-better.md)
 - [SUI 现货低风险收益策略：从质押、借贷到小仓位循环](articles/sui-low-risk-yield-strategy.md)
 - [YouTube 视频嵌入：URL 解析与 16:9 iframe 自适应比例实践](articles/youtube-embed-url-parsing-and-responsive-iframe.md)
